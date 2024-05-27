@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ae0604a-afcc-492d-94de-88f5ed94d0dc" name="Changes" comment="Fylo Landing Page">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="9ae0604a-afcc-492d-94de-88f5ed94d0dc" name="Changes" comment="Fylo Landing Page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715831683246</updated>
       <workItem from="1715831684329" duration="2649000" />
-      <workItem from="1716067325234" duration="186000" />
+      <workItem from="1716067325234" duration="275000" />
     </task>
     <task id="LOCAL-00001" summary="Fylo Landing Page">
       <option name="closed" value="true" />

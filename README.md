@@ -1,92 +1,162 @@
-# Frontend Mentor - Fylo landing page with two column layout
+# Frontend Mentor - Fylo landing page with two column layout solution
 
-![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)
+## Table of contents
 
-## Welcome! 👋
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Thanks for checking out this front-end coding challenge.
+## Overview
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+### The challenge
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
-
-## The challenge
-
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![Mockup](./images/readme-image.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Take a view at my solution](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-layout-and-hover-states-Bv_sWaU5Kb)
+- Live Site URL: [Visit Live Site](https://omowunmikamil.github.io/fylo-landing-page-with-two-column-layout/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+I learned how to use the grid and flexbox to create a two-column layout. I also learned how to use the position property to position elements on the page.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+```html
+<h1>Some HTML code I'm proud of</h1>
+<section id="hero-section">
+      <article class="left-article">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+      <article class="input-email">
+        <input type="email" id="email" name="email" placeholder="Enter your email...">
+        <button>Get Started</button>
+      </article>
+      </article>
+      <article class="right-article">
+        <img src="images/illustration-1.svg">
+      </article>
+</section>
 
-## Deploying your project
+<section id="curve">
+</section>
+```
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+#hero-section, #body-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 2px solid yellow;*/
+    padding: 2em 4em;
+    margin: 1em 0;
+}
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+.left-article {
+    width: 45%;
+    /*border: 2px solid blue;*/
+}
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+.right-article {
+    width: 50%;
+    /*border: 2px solid red;*/
+}
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+.left-article h1 {
+    font-size: 2.3em;
+    font-weight: 600;
+    line-height: 3.3rem;
+    color: hsl(243, 87%, 12%);
+}
 
-## Create a custom `README.md`
+.left-article p {
+    font-size: 1.1em;
+    color: hsl(243, 87%, 12%);
+    padding-right: 1.4em;
+    margin: 1em 0 1.5em;
+}
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+.right-article img {
+    width: 100%;
+}
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+.input-email {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 2px solid blue;*/
+}
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+.input-email input {
+    width: 57%;
+    height: 50px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-top: 2em;
+}
 
-## Submitting your solution
+input[type="email"] {
+    padding: 10px 20px 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+.input-email button {
+    width: 40%;
+    height: 50px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+.input-email button:hover {
+    background-color: hsl(223, 87%, 63%);
+}
+#curve {
+    width: 100%;
+    /*border: 2px solid green;*/
+    height: 100px;
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 6em;
+}
+```
 
-## Sharing your solution
+## Author
 
-There are multiple places you can share your solution:
+- Website - [Visit my Portfolio Website](https://omowunmikamil.tech)
+- Frontend Mentor - [Omowunmi Kamiludeen](https://www.frontendmentor.io/profile/Omowunmikamil)
+- Twitter - [Browser_Nerd](https://www.twitter.com/@Browser_Nerd)
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+## Acknowledgments
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+frontend mentor - For providing easy access to this challenge and its resources
