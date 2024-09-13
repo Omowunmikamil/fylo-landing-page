@@ -1,4 +1,4 @@
-# Frontend Mentor - Fylo landing page with two column layout solution
+# Frontend Mentor - Fylo landing page with two-column layout solution
 
 ## Table of contents
 
@@ -153,7 +153,7 @@ input[type="email"] {
 
 ## Author
 
-- Website - [Visit my Portfolio Website]([https://omowunmikamil.tech](https://omowunmi-kamiludeen.netlify.app/))
+- Website - [Visit my Portfolio Website](https://omowunmi-kamiludeen.netlify.app/)
 - Frontend Mentor - [Omowunmi Kamiludeen](https://www.frontendmentor.io/profile/Omowunmikamil)
 - Twitter - [Browser_Nerd](https://www.twitter.com/@Browser_Nerd)
 
